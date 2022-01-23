@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Barterly</title>
+{% endblock %}
+
+{% block body %}
+<div class="body_1">
+    <h1>New Products</h1>
+    
+    <p class="recent_general_info"> 
+        {% for cat in categories %}
+            <span class="categories_list"> {{ cat.sub_category__sub_category }} </span>
+        {% endfor %}
+    </p>
+   
+
+    <div id="search_product">
+                    
+    </div>
+
+    <div id="recent_products">
+
+        {% for item in products %}
+            <div id='product_capsule'> 
+                <a href="{{ item.get_absolute_url }}"><img src="media/{{item.photo1}}" class="capsule-img"></a>
+            <p>{{ item.product|truncatechars:17 }}</p>
+            <p>{{ item.price }}$ </p>
+
+            <div class="hover_show">
+                <p><a href="#">message</a></p>
+                <p><a href="#">favorite</a></p>
+            </div>
+            </div>
+        {% endfor %}
+
+    </div>
+
+</div>
+{% endblock%}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     <title>Registration</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="body_1"> 
+    <h1>REGISTER TODAY !</h1>
+<form action="{% url 'register' %}" method="post" enctype="multipart/form-data" class="login_f">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="'submit" class="login_btn"><span> Sign Up </span> </button>
+</form>
+
+</div>  
+{% endblock %}

@@ -1,0 +1,234 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#navigation {
+    margin: 5px;
+    padding: 4px;
+    border: solid 1px gray;
+    border-radius: 8px;
+    background-color: #2d142c;
+    box-shadow:  2px 2px 5px #b8b8b8,
+         -2px -2px 5px #f5f5f0;
+}
+
+#navigation a{
+    padding: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#navigation a:hover {
+    color: #ffccb3;
+}
+
+/* --------------------------------------- INDEX PAGE */
+.body_1 {
+    width: 100%;
+    margin: 10px;
+}
+
+.body_1 h1 {
+    margin: 6px 0px;
+    width: 96%;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.recent_general_info {
+    margin: 10px 4px 4px 4px;
+}
+
+.categories_list {
+    padding: 2px 4px;
+    border: solid 1px #476b6b;
+    border-radius: 8px;
+    margin: 0px 2px;
+    color: #476b6b;
+    font-size: 0.9em;
+    box-shadow:  1px 1px 2px #b8b8b8,
+         -1px -1px 2px #f5f5f0;
+}
+
+.messages {
+    min-width: 200px;
+    width: 20%;
+    margin: auto;
+    position: relative;
+}
+.message_success p, .message_error p {
+    margin: 0px;
+    letter-spacing: 2px;
+}
+.message_success {
+    padding: 2px;
+    font-size: 12px;
+    color: lavender;
+    text-align: center;
+    text-shadow: 1px 1px 4px black;
+    border-radius: 5px;
+    box-shadow:  3px 3px 7px #b8b8b8,
+         -3px -3px 7px #f5f5f0;
+    width: 100%;
+    background: linear-gradient(145deg, #801336, #801336);
+    opacity: 0.8;
+}
+
+.message_error {
+    padding: 5px;
+    font-size: 14px;
+    color: lavender;
+    text-align: center;
+    text-shadow: 1px 1px 4px black;
+    border-radius: 5px;
+    box-shadow:  3px 3px 7px #b8b8b8,
+         -3px -3px 7px #f5f5f0;
+    width: 100%;
+    background: linear-gradient(145deg, #a43737, #8a2e2e);
+    opacity: 0.8;
+}
+
+.login_f {
+    margin: 10px;
+    width: 380px;
+    text-align: center;
+}
+.login_f .errorlist {
+    position: relative;
+    float: right;
+    background-color: #510a32;
+    color: #ffcccc;
+    border-radius: 8px;
+    box-shadow:  1px 1px 5px #b8b8b8,
+         -1px -1px 5px #f5f5f0;
+    margin: 4px 0;
+}
+
+.login_f label, .post_product_form label {
+    border: solid 1px bisque;
+    padding: 2px 4px;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+}
+
+.login_f input, .post_product_form input {
+    float: right;
+    box-shadow:  1px 1px 5px #b8b8b8,
+         -1px -1px 5px #f5f5f0;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    padding: 2px 0;
+}
+
+.login_btn, .post-btn {
+    width: 100%;
+    background-color: #c72c41;
+    color: white;
+    border-radius: 8px;
+    box-shadow:  1px 1px 5px #b8b8b8,
+         -1px -1px 5px #f5f5f0;
+    padding: 4px;
+    margin: 6px 0;
+}
+
+.login_text {
+    width: 100%;
+    background-color: #dadfea;    ;
+    color: #5c72a3;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 8px;
+    padding: 2px;
+    box-shadow:  1px 1px 5px #b8b8b8,
+         -1px -1px 5px #f5f5f0;
+}
+.login_text a{
+    text-decoration: none;
+    color:#801336;
+}
+.login_text a:hover {
+    color: #c72c41;
+}
+
+.post_product_form {
+    margin: 20px;
+    width: 400px;
+
+}
+.post_product_form textarea {
+    width: 100%;
+    margin: 15px 0;
+
+}
+
+/* ---------------------------------------------Product Capsule */
+.hover_show {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0.8;
+}
+.hover_show p {
+    border: solid 1px gray;
+    background-color: white;
+    padding: 0 4px;
+    border-radius: 5px;
+
+}
+.hover_show a {
+    text-decoration: none;
+}
+#recent_products {
+    width: 98%;
+    position: relative;
+    border-bottom: solid 1px gray;
+    min-height: 500px;
+}
+#product_capsule {
+    position: relative;
+    float: left;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #eaf2fb;
+    margin: 10px;
+    padding: 5px; 
+    box-shadow:  1px 1px 5px #b8b8b8,
+         -1px -1px 5px #f5f5f0;
+    text-align: center;
+    overflow: hidden;
+
+}
+#product_capsule p {
+    margin: 2px;
+    color: #334d4d;
+}
+.capsule-img {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#product_capsule:hover .hover_show {
+    display: block;
+}
+
+
+/* ----------------------------------------------FOOTER */
+#footer { 
+    border: none;
+    width: 100%;
+    position: relative;
+}
+
+#footer p {
+    width: 400px;
+    padding: 4px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #5a6170;
+    color: whitesmoke;
+    text-align: center;
+    box-shadow:  3px 3px 7px #b8b8b8,
+         -3px -3px 7px #f5f5f0;
+}

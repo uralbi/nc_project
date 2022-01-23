@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     <title>Product</title>
+{% endblock %}
+
+
+{% block body %}
+
+    <div class = "product_details">
+        
+        <h2> {{item.product}} <span class="city_text">in {{item.city}}</span></h2>
+        <img src="/media/{{item.photo1}}" class="item-img1">
+        <h3>{{item.price}} $</h3>
+        <p class="item_description">{{item.description}}</p>
+        <p>Posted: {{item.created_at}} </p>
+        <p>Author: {{item.username}}</p>
+        <p>Views: {{item.views}}</p>
+        <img src="/media/{{item.photo2}}" class="item-img2">
+        <img src="/media/{{item.photo3}}" class="item-img2">
+        <img src="/media/{{item.photo4}}" class="item-img2">
+
+    </div>
+
+
+    {% if request.user == item.username and request.user.is_authenticated %}
+        <a class="delete_post" href="{% url 'delete' item.pk %}">DELETE</a>
+    {% endif %}
+
+{% endblock %}

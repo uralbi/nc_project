@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     <title>Log In</title>
+{% endblock %}
+
+
+
+{% block body %}
+
+<div class="body_1"> 
+    <h1>LOG IN</h1>
+{{ request.GET.next}}
+<form action="{% url 'login' %}" method="post" enctype="multipart/form-data" class="login_f">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="'submit" class="login_btn" ><span> Log In </span> </button>
+
+<div class="login_text">
+Don't have an account?  <a href="{% url 'register' %}"> Sign Up</a>
+    </div>    
+</form>
+
+</div>
+
+{% endblock %}

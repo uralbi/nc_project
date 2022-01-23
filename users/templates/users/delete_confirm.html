@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     <title>Delete the Post</title>
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="delete-section">
+        <form method="POST">
+            {% csrf_token %}
+
+            <h2> Confirm to delete </h2>
+            <h4> {{ object.product }} created at {{ object.created_at }} </h4>
+            <p> {{ object.description|truncatewords:25 }}</p>
+
+            <div class="form-group">
+                <button class="delete-link del-confirm-btn" type="submit">
+                    DELETE
+                </button>
+                <a class="update-link del-cancel-btn" href="{% url 'home' %}">
+                    Cancel
+                </a>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
